@@ -1,11 +1,12 @@
 /* Basic reset */
 * { box-sizing: border-box; }
-html,body { margin:0; padding:0; }
+html, body { margin:0; padding:0; }
 body {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #111;
   background: #fff;
-  line-height: 1.45;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* Container */
@@ -14,8 +15,19 @@ body {
 /* Header */
 .site-header { border-bottom: 1px solid #ddd; background: #f8f9fa; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0; }
-.site-title { font-family: "Merriweather", Georgia, serif; font-size: 1.4rem; margin:0; }
-.main-nav a { margin-left:14px; text-decoration:none; color:#0645ad; font-weight:600; }
+.site-title {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.8rem;      /* Slightly larger for visual hierarchy */
+  font-weight: 700;       /* Bold for emphasis */
+  margin:0;
+}
+.main-nav a {
+  margin-left:14px;
+  text-decoration:none;
+  color:#0645ad;
+  font-weight:600;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
 .main-nav a:hover { text-decoration:underline; }
 
 /* Page layout */
@@ -27,8 +39,18 @@ body {
 }
 
 /* Main column */
-.main-col h2 { font-size:1.4rem; margin-top:0; font-family:"Merriweather", Georgia, serif; }
-.main-col p, .main-col li { font-size: 1rem; color: #222; }
+.main-col h2 {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.6rem;   /* Clear heading hierarchy */
+  font-weight: 700;
+  margin-top:0;
+}
+.main-col p, .main-col li {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  color: #222;
+  font-weight: 400;
+}
 
 /* Sidebar / Infobox */
 .sidebar { }
@@ -36,7 +58,9 @@ body {
   border:1px solid #a2a9b1;
   background:#f8f8f8;
   padding:12px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size:0.95rem;
+  font-weight: 400;
 }
 .infobox-image {
   display:block;
@@ -46,23 +70,47 @@ body {
   margin-bottom:10px;
   border:1px solid #ccc;
 }
-.infobox-table { width:100%; border-collapse:collapse; font-size:0.95rem; }
+.infobox-table {
+  width:100%;
+  border-collapse:collapse;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size:0.95rem;
+}
 .infobox-table th {
-  text-align:left; vertical-align:top; padding:6px 4px; width:40%; font-weight:700;
+  text-align:left;
+  vertical-align:top;
+  padding:6px 4px;
+  width:40%;
+  font-weight:700;
   background:transparent;
 }
-.infobox-table td { padding:6px 4px; }
+.infobox-table td { padding:6px 4px; font-weight:400; }
 
 /* Quick links */
 .quick-links { margin-top:18px; padding:10px 6px; }
-.quick-links h4 { margin:0 0 8px; }
+.quick-links h4 {
+  font-family: "Merriweather", Georgia, serif;
+  font-weight:700;
+  margin:0 0 8px;
+}
 .quick-links ul { list-style:none; padding:0; margin:0; }
 .quick-links li { margin-bottom:6px; }
-.quick-links a { color:#0645ad; text-decoration:none; }
+.quick-links a {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color:#0645ad;
+  text-decoration:none;
+  font-weight:500;
+}
 .quick-links a:hover { text-decoration:underline; }
 
 /* Footer */
-.site-footer { border-top:1px solid #ddd; padding:12px 0; color:#666; font-size:0.9rem; }
+.site-footer {
+  border-top:1px solid #ddd;
+  padding:12px 0;
+  color:#666;
+  font-size:0.9rem;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
 
 /* Responsive */
 @media (max-width: 880px) {
